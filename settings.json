@@ -1,14 +1,14 @@
 {
     "bot-account":{ 
-        "username": "popusk",
+        "username": "Admin",
         "password": "",
         "type": "mojang"
     },
 
     "server":{
-        "ip": "localhost",
-        "port": 25565,
-        "version": "1.16.4"
+        "ip": "spoookytown.tk",
+        "port": 36068,
+        "version": "1.17.1"
     },
 
     "position":{
@@ -37,8 +37,7 @@
             "messages": [
                 "I'm a regular player ", 
                 "My owner is urFate_ ", 
-                "I want be alone ", 
-                "Visit my GitHub page! (urFate/Afk-Bot)"
+                " "
             ]
         },
 
