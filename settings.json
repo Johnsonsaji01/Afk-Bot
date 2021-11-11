@@ -25,23 +25,22 @@
         },
 
         "anti-afk":{
-            "enabled": false,
-            "sneak": false
+            "enabled": true,
+            "sneak": true
         },
 
         "chat-messages":{
-            "enabled": false,
+            "enabled": true,
             "repeat": true,
-            "repeat-delay": 60,
+            "repeat-delay": 10,
 
             "messages": [
-                "I'm a regular player ", 
-                "My owner is urFate_ ", 
-                " "
+                "Type /hub to choose world ", 
+                "I am a robot "
             ]
         },
 
         "chat-log": true,
-        "auto-reconnect": false
+        "auto-reconnect": true
     }
 }
