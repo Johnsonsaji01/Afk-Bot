@@ -6,7 +6,7 @@
     },
 
     "server":{
-        "ip": "spoookytown.tk",
+        "ip": "spookytown.aternos.me",
         "port": 36068,
         "version": "1.17.1"
     },
@@ -31,12 +31,11 @@
 
         "chat-messages":{
             "enabled": true,
-            "repeat": true,
+            "repeat": false,
             "repeat-delay": 10,
 
             "messages": [
-                "Type /hub to choose world ", 
-                "I am a robot "
+                "/kill Admin"
             ]
         },
 
