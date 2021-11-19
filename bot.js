@@ -2,6 +2,8 @@ const mineflayer = require('mineflayer')
 const Movements = require('mineflayer-pathfinder').Movements
 const pathfinder = require('mineflayer-pathfinder').pathfinder
 const { GoalBlock} = require('mineflayer-pathfinder').goals
+const antiafk = require("mineflayer-antiafk");
+
 
 const config = require('./settings.json');
 
@@ -55,6 +57,11 @@ function createBot () {
               })
         }
       }
+
+      
+ bot.on("spawn", ()=>{
+    bot.afk.start();
+})
       
 
       const pos = config.position
