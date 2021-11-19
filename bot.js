@@ -3,6 +3,7 @@ const Movements = require('mineflayer-pathfinder').Movements
 const pathfinder = require('mineflayer-pathfinder').pathfinder
 const { GoalBlock} = require('mineflayer-pathfinder').goals
 const antiafk = require("mineflayer-antiafk");
+const pvp = require('mineflayer-pvp').plugin
 
 
 const config = require('./settings.json');
@@ -57,11 +58,6 @@ function createBot () {
               })
         }
       }
-
-      
- bot.on("spawn", ()=>{
-    bot.afk.start();
-})
       
 
       const pos = config.position
@@ -79,6 +75,32 @@ function createBot () {
         }
       }
   })
+
+  bot.loadPlugin(pathfinder)
+bot.loadPlugin(pvp)
+
+bot.on('chat', (username, message) => {
+  if (message === 'fight me') {
+    const player = bot.players[username]
+
+    if (!player) {
+      bot.chat("I can't see you.")
+      return
+    }
+
+    bot.pvp.attack(player.entity)
+  }
+
+  if (message === 'stop') {
+    bot.pvp.stop()
+  }
+})
+
+bot.loadPlugin(antiafk);
+        
+ bot.on("spawn", ()=>{
+    bot.afk.start();
+})
 
   bot.on("chat", function(username, message){
       if(config.utils['chat-log']){
