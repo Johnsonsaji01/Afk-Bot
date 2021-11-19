@@ -11,6 +11,7 @@
   "dependencies": {
     "mineflayer": "^3.11.0",
     "mineflayer-antiafk": "git+https://github.com/Etiaro/mineflayer-antiafk.git",
-    "mineflayer-pathfinder": "^1.2.3"
+    "mineflayer-pathfinder": "^1.2.3",
+    "mineflayer-pvp": "^1.0.2"
   }
 }
