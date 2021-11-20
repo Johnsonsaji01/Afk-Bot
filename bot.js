@@ -5,6 +5,11 @@ const { GoalBlock} = require('mineflayer-pathfinder').goals
 const antiafk = require("mineflayer-antiafk");
 const pvp = require('mineflayer-pvp').plugin
 
+var http = require('http');  
+http.createServer(function (req, res) {   
+  res.write("I'm alive");   
+  res.end(); 
+}).listen(8080);
 
 const config = require('./settings.json');
 
