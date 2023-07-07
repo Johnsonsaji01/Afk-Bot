@@ -6,9 +6,9 @@
     },
 
     "server":{
-        "ip": "spookytown.aternos.me",
-        "port": 36068,
-        "version": "1.17.1"
+        "ip": "PerplexVerse.aternos.me",
+        "port": 15037,
+        "version": "1.20.1"
     },
 
     "position":{
